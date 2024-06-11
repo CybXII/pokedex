@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokedex-Air</title>
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./types.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./script.js"></script>
+  <link rel="icon" type="image" href="./img/pokeball-1594373_640.png">
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./chart.js"></script>
+  <script src="./render.js"></script>
+</head>
+
+<body onload="loadAPI()">
+  <div id="pokedex" class="pokedex">
+    <div id="pokedex_upper_border" class="pokedex_upper_border">
+      <div class="logo"></div>
+      <h1>AIRDEX</h1>
+      <div id="loading_process" class="loader"></div>
+    </div>
+    <div id="pokedex_screen" class="pokedex_screen">
+      <div id="smallCard" class="screen_backgound">
+        <img class="screen_img" src="./img/pokemon-1593048_1920.jpg" alt="">
+      </div>
+      <div id="pokemonCard" class="bigCardContainer d_none">
+        <div>
+        </div>
+      </div>
+      <div id="loading_screen" class="screen_loader"></div>
+    </div>
+    <div id="pokedex_buttons" class="pokedex_buttons">
+      <button onclick="loadMore()">Show more</button>
+      <button onclick="renderSearchPokemon()">Search</button>
+    </div>
+  </div>
+</body>
+
+</html>

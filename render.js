@@ -197,7 +197,7 @@ function renderSearchId(search,list){
         let id = fetchPokemons['id'][i];
         if (id.toString().includes(search))
         list.innerHTML += `        
-        <li>
+        <li onclick="openCard(${fetchPokemons['id'][i]})">
             <p>ID#${id}</p>
             <div>
                 <p>${fetchPokemons['name'][i]}</p>

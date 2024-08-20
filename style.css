@@ -94,11 +94,14 @@ h1 {
 button {
   height: 3vh;
   border-radius: 2vw;
-  font-size: 2vh;
+  font-weight: 900;
+  box-sizing: border-box;
+  padding: 4px 0;
   border: 0;
   background-color: rgb(255, 56, 86);
   transition: all 0.3s ease;
-  box-shadow: rgb(0, 0, 0) 0px 1vh 0px 0px;
+  box-shadow: rgb(0, 0, 0) 0px 1vh 0px 0px,
+  rgba(35, 22, 22, 0.7) 0vh 0vh 0vw 0.3vw inset;
   color: hsl(0, 0%, 0%);
   cursor: pointer;
   display: flex;
@@ -106,6 +109,8 @@ button {
   align-items: center;
   padding-left: 0.5vw;
   padding-right: 0.5vw;
+  padding-top: 0.5vh;
+  padding-bottom: 0.5vh;
   border-color: #000000;
   border: solid 0.1vw;
 }
@@ -635,6 +640,7 @@ h3{
   font-size: 5vh;
   letter-spacing: 2px;
   display: inline-block;
+  text-align: center;
   box-sizing: border-box;
   animation: floating 1s ease-out infinite alternate;
 }
@@ -712,14 +718,13 @@ h3{
   } 
   .switchNext{
     width: 10%;
-   }
-   .switchPrev{
+  }
+  .switchPrev{
     width: 10%;
-   }
+  }
 
-   li{
+  li{
     font-size: 1.5vh;
     width: 90%;
-   }
-
+  }
 }
